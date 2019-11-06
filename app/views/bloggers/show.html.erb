@@ -1,0 +1,11 @@
+<h1> Name: <%=@blogger.name%> </h1>
+<br>
+<h2>Bio: <%= @blogger.bio %></h2>
+<br>
+<h3>Age: <%= @blogger.age %></h3>
+<br>
+<h3>Posts: <%@blogger.posts.each do |post|  %></h3>
+<ul>
+<li><%= post.content%></li>
+</ul>
+<%end%>
